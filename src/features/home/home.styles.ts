@@ -10,12 +10,6 @@ export const styles = StyleSheet.create({
         padding: 24,
         paddingBottom: 120,
     },
-    eyebrow: {
-        color: "#64748b",
-        fontSize: 14,
-        fontWeight: "600",
-        textTransform: "uppercase",
-    },
     message: {
         color: "#0f172a",
         fontSize: 24,

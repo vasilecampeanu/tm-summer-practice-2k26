@@ -17,6 +17,9 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.tm-summer-practice"
     }
   }
 }
