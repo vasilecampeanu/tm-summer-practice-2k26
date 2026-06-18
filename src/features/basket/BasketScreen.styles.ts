@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "@/constants/theme";
 
 export const styles = StyleSheet.create({
     content: {
@@ -7,7 +8,7 @@ export const styles = StyleSheet.create({
         paddingBottom: 120,
     },
     message: {
-        color: "#0f172a",
+        color: colors.text.strong,
         fontSize: 24,
         fontWeight: "600",
         textAlign: "center",
