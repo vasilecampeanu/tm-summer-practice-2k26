@@ -1,11 +1,14 @@
-import { Text, View } from "react-native";
-
-import { styles } from "./basket.styles";
+import { Text } from "react-native";
+import { ScreenFrame } from "@/components/ScreenFrame";
+import { styles } from "./BasketScreen.styles";
 
 export default function BasketScreen() {
     return (
-        <View style={styles.container}>
+        <ScreenFrame 
+            title="Basket" 
+            contentContainerStyle={styles.content}
+        >
             <Text style={styles.message}>Your shopping cart is empty</Text>
-        </View>
+        </ScreenFrame>
     );
 }

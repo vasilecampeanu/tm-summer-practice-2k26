@@ -1,13 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    content: {
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#f8fafc",
-        gap: 8,
-        padding: 24,
         paddingBottom: 120,
     },
     message: {

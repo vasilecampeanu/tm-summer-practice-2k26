@@ -1,3 +1,4 @@
-# Expo HAS CHANGED
+# Notes
 
-Read the exact versioned docs at https://docs.expo.dev/versions/v56.0.0/ before writing any code.
+- Shared components live in `src/components/Foo/` with `Foo.tsx`, `Foo.styles.ts`, and `index.ts`; import them as `@/components/Foo`.
+- Screen styles live beside the screen as `FooScreen.styles.ts`.
