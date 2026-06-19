@@ -3,7 +3,7 @@ import { ScreenFrame } from "@/components/ScreenFrame";
 import { colors } from "@/constants/theme";
 import { useDataFetch } from "@/hooks/useDataFetch";
 import { CategoryList } from "./components/CategoryList";
-import { isSupportedCategory } from "./components/CategoryArticleItem";
+import { isSupportedCategory } from "./components/CategoryListItem";
 import { styles } from "./HomeScreen.styles";
 
 const CATEGORIES_ENDPOINT        = "https://dummyjson.com/products/category-list";

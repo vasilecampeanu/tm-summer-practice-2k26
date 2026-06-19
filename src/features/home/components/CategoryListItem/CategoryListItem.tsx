@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { ChevronRight } from "lucide-react-native";
 import { colors } from "@/constants/theme";
@@ -5,20 +6,23 @@ import {
     formatCategoryName,
     getCategoryStyle,
     type SupportedCategory,
-} from "./CategoryArticleItem.helpers";
-import { styles } from "./CategoryArticleItem.styles";
+} from "./CategoryListItem.helpers";
+import { styles } from "./CategoryListItem.styles";
 
-type CategoryArticleItemProps = {
+type CategoryListItemProps = {
     category: SupportedCategory;
     index: number;
 };
 
-export function CategoryArticleItem({ category, index }: CategoryArticleItemProps) {
+export function CategoryListItem({ category, index }: CategoryListItemProps) {
+    const router        = useRouter();
     const categoryStyle = getCategoryStyle(category, index);
     const CategoryIcon  = categoryStyle.icon;
 
     return (
         <Pressable
+            accessibilityLabel={`Open ${formatCategoryName(category)} category`}
+            onPress={() => router.push(`./${category}`, { relativeToDirectory: true })}
             style={({ hovered, pressed }) => [
                 styles.row,
                 hovered && styles.rowHovered,

@@ -1,8 +1,8 @@
 import { Text } from "react-native";
 import {
-    CategoryArticleItem,
+    CategoryListItem,
     type SupportedCategory,
-} from "../CategoryArticleItem";
+} from "../CategoryListItem";
 import { styles } from "./CategoryList.styles";
 
 type CategoryListProps = {
@@ -17,7 +17,7 @@ export function CategoryList({ categories }: CategoryListProps) {
     return (
         <>
             {categories.map((category, index) => (
-                <CategoryArticleItem
+                <CategoryListItem
                     key={category}
                     category={category}
                     index={index}
